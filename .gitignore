@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+
+# IDE
+.idea/
+
+# Model checkpoints (too large)
+checkpoints/
+*.pth
+
+CLAUDE.md
+
+
+# TensorBoard logs
+runs/
+
+# OS
+.DS_Store
+Thumbs.db
