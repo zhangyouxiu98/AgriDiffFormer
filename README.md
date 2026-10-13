@@ -116,17 +116,7 @@ x2 (T2 image)  →  FCN (ResNet34)  →  Dec2  →  Semantic Map B
 - **Backbone**: ResNet34 FCN with stride=1 in layers 3 & 4 (1/8 spatial resolution)
 - **DiffFormer**: 16 learnable difference tokens, 3-layer Transformer (8 heads, 128-dim), patch-wise difference embeddings
 - **Decoders**: transposed convolution (kernel=7, stride=2) with skip connections
-- **~24M parameters**
 
-## Example results
-
-Results on a non-agriculturalization dataset (1024×1024, 5 classes):
-
-| OA | mIoU | Sek | Fscd |
-|---|---|---|---|
-| 85.8% | 75.2% | 49.2% | 83.5% |
-
-Class legend: ▢ unchanged · ▢ farmland · ▢ desert · ▢ building · ▢ water
 
 ## License
 
